@@ -46,6 +46,12 @@ function unhideLightbox5() {
 
 document.getElementById("work-img5").onclick = unhideLightbox5;
 
+function unhideLightbox6() {
+	unhideLightbox("LakeMerritt")
+}
+
+document.getElementById("work-img6").onclick = unhideLightbox6;
+
 function closeLightbox(lightboxID) {
 	document.getElementById('lightbox-overlay').classList.add('hidden');
 	document.getElementById(lightboxID).classList.add('hidden');
