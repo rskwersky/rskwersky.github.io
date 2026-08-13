@@ -3,24 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rachel — Research & Design</title>
+  <title>Rachel Skwersky — About</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects/research.html">Research</a>
-      <a href="projects/design.html">Design</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>Short intro here.</p>
-    </section>
-  </main>
-  <footer><p>© 2026</p></footer>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1 class="wordmark">Rachel<br>Skwersky</h1>
+
+      <nav class="nav-main" aria-label="Primary">
+        <a href="about.html" class="nav-link is-current" aria-current="page">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="design.html" class="nav-link">Design</a>
+        <a href="play.html" class="nav-link">Play</a>
+      </nav>
+
+      <nav class="nav-external" aria-label="Elsewhere">
+        <a href="assets/CV.pdf">CV</a> /
+        <a href="mailto:rskwersky2025@berkeley.edu">Email</a> /
+        <a href="https://rachelskwersky.substack.com">Substack</a>
+      </nav>
+      <img class="sidebar-mark"
+           src="assets/images/crossed-fingers-blue.svg"
+           alt="">
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="content">
+
+      <div class="hello-row">
+        <h2 class="hello">Hello! My name is</h2>
+        <!-- fingerspelling: R-A-C-H-E-L. Swap filenames to match your assets. -->
+        <span class="fingerspell" aria-label="R A C H E L" role="img">
+          <img src="assets/images/fs-r.svg" alt="">
+          <img src="assets/images/fs-a.svg" alt="">
+          <img src="assets/images/fs-c.svg" alt="">
+          <img src="assets/images/fs-h.svg" alt="">
+          <img src="assets/images/fs-e.svg" alt="">
+          <img src="assets/images/fs-l.svg" alt="">
+        </span>
+      </div>
+
+      <div class="prose">
+        <p>I am a designer and predoctoral researcher at UC Berkeley. I currently
+        study the impact of LLMs on children&rsquo;s intellectual humility, curiosity, and
+        information-seeking habits.</p>
+
+        <p>I am a CODA (child of Deaf adults) &ndash; if you&rsquo;re interested, you can
+        <a href="https://rachelskwersky.substack.com/p/the-code-switching-to-dissociation">read more about what that means here</a>. In my past life (2021&ndash;2024)
+        I studied Cognitive Science and Data Science at UC Berkeley, engineered ASL-based
+        interfaces for accessible consent procedures at Gallaudet, conducted research on
+        sign language linguistics, prototyped mental health wearables and apps, and
+        designed educational games.</p>
+
+        <p>Now, I&rsquo;m interested in how humans approach the cognitive task of designing
+        for others. A few mysteries drive my research:</p>
+
+        <p class="prose-gap">In my free time, I read (a lot), write (sometimes), make ceramics,
+        watercolor paint, design exhibits for science museums, practice yoga, study French
+        and Korean, and play outside.</p>
+      </div>
+    </main>
+
+    <!-- ============ RIGHT RAIL ============ -->
+    <aside class="rail">
+      <figure class="polaroid">
+        <img src="assets/images/portrait.jpg" alt="Rachel on a boat, arms raised, laughing">
+      </figure>
+
+      <div class="sign-name">
+        <img class="sign-name-mark"
+             src="assets/images/crossed-fingers-pink.svg"
+             alt="">
+        <img class="sign-name-arrow"
+             src="assets/images/arrow-pink.svg"
+             alt="">
+        <span class="sign-name-label">my sign<br>name</span>
+      </div>
+    </aside>
+
+  </div>
 </body>
 </html>
