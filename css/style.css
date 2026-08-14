@@ -187,7 +187,6 @@ a { color: inherit; }
 .exp-body a:hover { color: var(--magenta); }
 
 .rail {
-  position: sticky;
   top: 100px;              /* pins here when you scroll */
   align-self: start;        /* required for sticky inside a grid track */
   padding-top: 100px;       /* pushes the photo down initially */
