@@ -72,7 +72,20 @@ a { color: inherit; }
 .external-links a { text-decoration: none; }
 .external-links a:hover { color: var(--magenta); }
 
-.sidebar-mark { width: 32.85px; height: 69.71px; }
+.sidebar-mark {
+  width: 32.85px;
+  height: 69.71px;
+  transition: transform 0.2s ease;
+}
+.sidebar-mark:hover {
+  animation: wiggle 0.3s ease-in-out infinite;
+}
+@keyframes wiggle {
+  0%   { transform: translateX(6px) rotate(0deg); }
+  25%  { transform: translateX(6px) rotate(-3deg); }   /* counterclockwise */
+  75%  { transform: translateX(6px) rotate(3deg); }    /* clockwise */
+  100% { transform: translateX(6px) rotate(0deg); }
+}
 
 .hello-row {
   display: flex;
@@ -114,6 +127,20 @@ a { color: inherit; }
 
 .polaroid img { width: 100%; }
 
+.rail {
+  position: sticky;
+  top: 100px;              /* pins here when you scroll */
+  align-self: start;        /* required for sticky inside a grid track */
+  padding-top: 100px;       /* pushes the photo down initially */
+}
+
+
+@keyframes wiggle {
+  0%   { transform: translateX(6px) rotate(0deg); }
+  25%  { transform: translateX(6px) rotate(-3deg); }   /* counterclockwise */
+  75%  { transform: translateX(6px) rotate(3deg); }    /* clockwise */
+  100% { transform: translateX(6px) rotate(0deg); }
+}
 
 @media (max-width: 1024px) {
   .layout {
@@ -121,7 +148,10 @@ a { color: inherit; }
     gap: 40px;
     padding: 32px 24px;
   }
-  .rail { flex-direction: row; justify-content: flex-start; flex-wrap: wrap; }
+  .rail {
+  position: static;      /* cancel sticky on mobile */
+  padding-top: 0;        /* cancel the desktop top offset */
+  }
 }
 
 @media (max-width: 560px) {
