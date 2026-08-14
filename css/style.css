@@ -127,7 +127,7 @@ a { color: inherit; }
 .polaroid {
   margin: 0;
   transform: rotate(2deg);
-  max-width: 260px;
+  max-width: 325px;
 }
 
 .polaroid img { width: 100%; }
