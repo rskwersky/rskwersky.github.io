@@ -73,14 +73,14 @@ a { color: inherit; }
 
 .sidebar-mark { width: 48px; height: auto; }
 
-.greeting {
+.hello-row {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 32px;
   flex-wrap: wrap;
 }
-.greeting-text {
+.hello {
   color: var(--blue);
   font-size: var(--size-greeting);
   margin: 0;
