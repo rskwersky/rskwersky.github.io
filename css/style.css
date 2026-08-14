@@ -125,12 +125,19 @@ a { color: inherit; }
 .gallery { display: flex; flex-direction: column; align-items: center; gap: 50px; }
 
 .polaroid {
-  margin: 0;
+  background: #fdfdff;
+  padding: 14px 14px 48px;   /* thin top/sides, deep bottom chin */
+  border-radius: 6px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.12), 0 3px 8px rgba(0,0,0,.06);
   transform: rotate(2deg);
-  max-width: 325px;
+  width: max-content;         /* frame hugs the image instead of stretching */
 }
-
-.polaroid img { width: 100%; }
+.polaroid img {
+  display: block;
+  width: 240px;
+  height: 240px;
+  border-radius: 2px;         /* slight softening on the photo corners too */
+}
 
 .rail {
   position: sticky;
