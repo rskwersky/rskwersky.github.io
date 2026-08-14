@@ -78,10 +78,10 @@ a { color: inherit; }
   transition: transform 0.2s ease;
 }
 .sidebar-mark:hover {
-  animation: wiggle 0.3s ease-in-out infinite;
+  animation: wiggle 0.5s ease-in-out infinite;
 }
 @keyframes wiggle {
-  0%   { transform: translateX(6px) rotate(0deg); }
+  0%   { transform: rotate(0deg); }
   25%  { transform: translateX(6px) rotate(-3deg); }   /* counterclockwise */
   75%  { transform: translateX(6px) rotate(3deg); }    /* clockwise */
   100% { transform: translateX(6px) rotate(0deg); }
