@@ -85,7 +85,7 @@ a { color: inherit; }
   font-size: var(--size-greeting);
   margin: 0;
 }
-.fingerspell { display: inline-flex; gap: 10px; align-items: center; }
+.fingerspell { display: inline-flex; gap: 10px; align-items: flex-end; }
 /* Each handshape has its own footprint (from Figma). Sized individually. */
 .fs-r { width: 41.58px; height: 88.24px; }
 .fs-a { width: 69.98px; height: 47.67px; }
