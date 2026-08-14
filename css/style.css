@@ -82,9 +82,9 @@ a { color: inherit; }
 }
 @keyframes wiggle {
   0%   { transform: rotate(0deg); }
-  25%  { transform: translateX(6px) rotate(-3deg); }   /* counterclockwise */
-  75%  { transform: translateX(6px) rotate(3deg); }    /* clockwise */
-  100% { transform: translateX(6px) rotate(0deg); }
+  25%  { transform: rotate(-3deg); }   /* counterclockwise */
+  75%  { transform: rotate(3deg); }    /* clockwise */
+  100% { transform: rotate(0deg); }
 }
 
 .hello-row {
