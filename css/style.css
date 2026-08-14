@@ -14,8 +14,9 @@
   --paper:   #fdfdff; 
   --font: "Satoshi", system-ui, -apple-system, sans-serif;
 
-  --size-name:      25px;
-  --size-greeting:  25px;
+  --size-name:      24px;
+  --size-greeting:  24px;
+  --sub-header:     22px;
   --size-nav:       16px;
   --size-body:      16px;
   --size-links:     14px;
@@ -143,7 +144,7 @@ a { color: inherit; }
 
 .exp-header {
   color: var(--blue);
-  font-size: var(--size-greeting);
+  font-size: var(--sub-header);
   text-decoration: underline;
   text-underline-offset: 4px;
   margin: 0 0 28px;
