@@ -142,7 +142,8 @@ a { color: inherit; }
 .experience { margin-top: 8px; }
 
 .exp-header {
-  font-size: var(--size-nav);          /* 16px, matches your scale */
+  color: var(--blue);
+  font-size: var(--size-greeting);
   text-decoration: underline;
   text-underline-offset: 4px;
   margin: 0 0 28px;
