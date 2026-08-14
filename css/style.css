@@ -72,7 +72,7 @@ a { color: inherit; }
 .external-links a { text-decoration: none; }
 .external-links a:hover { color: var(--magenta); }
 
-.sidebar-mark { width: 48px; height: auto; }
+.sidebar-mark { width: 32.85px; height: 69.71px; }
 
 .hello-row {
   display: flex;
