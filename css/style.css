@@ -139,6 +139,51 @@ a { color: inherit; }
   border-radius: 2px;         /* slight softening on the photo corners too */
 }
 
+.experience { margin-top: 8px; }
+
+.exp-header {
+  font-size: var(--size-nav);          /* 16px, matches your scale */
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin: 0 0 28px;
+}
+
+.exp-item { margin: 0 0 20px; }
+
+.exp-item summary {
+  list-style: none;                     /* remove default disclosure triangle */
+  cursor: pointer;
+}
+.exp-item summary::-webkit-details-marker { display: none; }  /* Safari's triangle */
+
+.exp-role {
+  color: var(--blue);
+  display: flex;
+  gap: 8px;
+}
+.exp-role .org { font-style: italic; }
+
+.exp-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;      /* smooth rotate */
+}
+.exp-item[open] .exp-arrow { transform: rotate(90deg); }  /* → becomes ↓ when open */
+
+.exp-date {
+  display: block;
+  margin: 2px 0 0 22px;                 /* indent to line up under the role text */
+}
+
+.exp-body { margin: 10px 0 0 22px; }
+.exp-body p {
+  margin: 0 0 4px;
+  display: flex;
+  gap: 8px;
+}
+.exp-body p::before { content: "→"; }   /* auto arrow marker on each sub-item */
+.exp-body a { color: var(--black); text-underline-offset: 2px; }
+.exp-body a:hover { color: var(--magenta); }
+
 .rail {
   position: sticky;
   top: 100px;              /* pins here when you scroll */
