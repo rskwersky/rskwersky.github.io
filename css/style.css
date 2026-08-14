@@ -78,8 +78,8 @@ a { color: inherit; }
 .external-links a:hover { color: var(--magenta); }
 
 .sidebar-mark {
-  width: 32.85px;
-  height: 69.71px;
+  width: auto;
+  height: 85px;
   transition: transform 0.2s ease;
 }
 .sidebar-mark:hover {
