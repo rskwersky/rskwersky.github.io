@@ -62,7 +62,12 @@ a { color: inherit; }
   width: max-content;
 }
 .site-nav a:hover { color: var(--blue); }
-.site-nav a.is-current { color: var(--blue); text-decoration: underline; }
+.site-nav a.is-current {
+  color: var(--blue);
+}
+.site-nav a.is-current::after {
+  content: " /";
+}
 
 .external-links {
   font-size: var(--size-links);
@@ -113,7 +118,7 @@ a { color: inherit; }
 .prose { max-width: 62ch; }
 .prose p { margin: 0 0 24px; }
 .prose a { color: var(--blue); text-underline-offset: 2px; }
-.prose a:hover { color: var(--magenta); }
+.prose a:hover { color: var(--blue); }
 
 .prose-gap { margin-top: 72px; }
 
